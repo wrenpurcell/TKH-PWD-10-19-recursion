@@ -88,3 +88,14 @@ function factorial(n){
     return arr[0] * productOfArray(arr.slice(1));
 }
 //productOfArray([2,1,4,8,3])
+
+//recursive range
+//write a function that accepts a number and adds up all the number from 0 to the number passed to the function
+function recursiveRange(x){
+    if (x === 0 ) return 0;
+    console.log(`x is: ${x}`)
+    return x + recursiveRange(x-1);
+ }
+
+
+ //console.log(recursiveRange(5));
